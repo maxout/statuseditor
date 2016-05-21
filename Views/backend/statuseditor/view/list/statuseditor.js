@@ -12,9 +12,9 @@ Ext.define('Shopware.apps.Statuseditor.view.list.Statuseditor', {
                     {
                         formatName: function(name) {
                             if (name == 'payment') {
-                                return 'Zahlungsstatus';
+                                return '{s name="overview/edit/payment_status" namespace="backend/order/main"}Zahlungsstatus{/s}';
                             } else {
-                                return 'Bestellstatus';
+                                return '{s name="overview/edit/order_status" namespace="backend/order/main"}{/s}';
                             }
                         }
                     }
@@ -31,16 +31,16 @@ Ext.define('Shopware.apps.Statuseditor.view.list.Statuseditor', {
             rowEditing: true,
             columns: {
                 name: {
-                    header: 'Name'
+                    header: '{s name="column/name" namespace="backend/order/main"}{/s}'
                 },
                 description: {
-                    header: 'Beschreibung'
+                    header: '{s name="column/description" namespace="backend/order/main"}{/s}'
                 },
                 position: {
-                    header: 'Sortierung'
+                    header: '{s name="sorting" namespace="backend/product_stream/main"}{/s}'
                 },
                 sendMail: {
-                    header: 'Email Senden?'
+                    header: '{s name="button" namespace="backend/order/main"}{/s}'
                 }
 
             }

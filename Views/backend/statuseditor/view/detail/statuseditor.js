@@ -11,17 +11,17 @@ Ext.define('Shopware.apps.Statuseditor.view.detail.Statuseditor', {
                 {
                     fields: {
                         name: {
-                            fieldLabel: 'Name'
+                            fieldLabel: '{s name="column/name" namespace="backend/order/main"}{/s}'
                         },
                         description: {
-                            fieldLabel: 'Beschreibung'
+                            fieldLabel: '{s name="column/description" namespace="backend/order/main"}{/s}'
                         },
                         position: {
-                            fieldLabel: 'Sortierung',
+                            fieldLabel: '{s name="sorting" namespace="backend/product_stream/main"}{/s}',
                             defaultValue: 0
                         },
                         group: {
-                            fieldLabel: 'Art',
+                            fieldLabel: '{s name="variant/configurator/dependency/group" namespace="backend/article/view/main"}{/s}',
                             xtype: 'combo',
                             store: me.getGroupStore(),
                             valueField: 'id',
@@ -29,7 +29,7 @@ Ext.define('Shopware.apps.Statuseditor.view.detail.Statuseditor', {
                             queryMode: 'local'
                         },
                         sendMail: {
-                            fieldLabel: 'Email Senden?',
+                            fieldLabel: '{s name="button" namespace="backend/order/main"}{/s}',
                             xtype: 'checkbox',
                             inputValue: 1,
                             uncheckedValue: 0
@@ -55,11 +55,11 @@ Ext.define('Shopware.apps.Statuseditor.view.detail.Statuseditor', {
             data: [
                 {
                     id: 'payment',
-                    name: 'Zahlungstatus'
+                    name: '{s name="overview/edit/payment_status" namespace="backend/order/main"}Zahlungsstatus{/s}'
                 },
                 {
                     id: 'state',
-                    name: 'Bestellstatus'
+                    name: '{s name="overview/edit/order_status" namespace="backend/order/main"}{/s}'
                 }
             ]
         })
