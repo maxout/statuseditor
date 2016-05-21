@@ -1,7 +1,7 @@
-# Bestell und Zahlungstatus Editor
+# Order and Paymentstatus Editor
 
-Simpler Editor für die Bestell und Zahlungstatus Editierung.
+Simple Editor for Order and Paymentstatus Editing
 
-![Listing](http://i.imgur.com/mIH44CO.png)
+![Listing](http://i.imgur.com/mPcd9jD.png)
 
-![Detail](http://i.imgur.com/LYgzH9Z.png)
+![Detail](http://i.imgur.com/Tt4lxK6.png)
