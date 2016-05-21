@@ -1,0 +1,14 @@
+{
+  "name": "shyim/statuseditor",
+  "type": "shopware-backend-plugin",
+  "keywords": ["state", "editing", "shopware"],
+  "description": "Order and Paymentstatus Editor",
+  "license": "MIT",
+  "extra": {
+    "installer-name": "Statuseditor"
+  },
+  "require": {
+    "php": ">=5.5.9",
+    "composer/installers": "^1.0"
+  }
+}
